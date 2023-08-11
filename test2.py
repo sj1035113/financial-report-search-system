@@ -1,5 +1,11 @@
-print("test 2")
-print("test 22")
-print("test 222")
-print("test 2222")
-print("test 3333333")
+import json
+with open('test.json','r') as file:
+    data = json.load(file)
+    print(data)
+
+
+
+
+
+
+
