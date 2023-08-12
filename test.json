@@ -1,15 +1,22 @@
-
-{
-    "Student 1" : {
-        "Student_id": 126,
-        "Name": "Jack",
-        "Score": 99,
-        "Friends": ["Tim", "Jen", "Ken"]
+[
+    {
+        "name": "joseph",
+        "birthday": "2005.03.13",
+        "city": "newyork"
     },
-    "Student 2": {
-        "Student_id": 128,
-        "Name": "Ken",
-        "Score": 99,
-        "Friends": ["Jack", "Jessy", "Cathy"]
+    {
+        "name": "julia",
+        "birthday": "2005.09.24",
+        "city": "newyork"
+    },
+    {
+        "name": "samuel",
+        "birthday": "2004.03.20",
+        "city": "newyork"
+    },
+    {
+        "name": "2004.08.14",
+        "birthday": "joseph"
     }
-}
+
+]
