@@ -1,0 +1,130 @@
+[
+    [
+        "KO",
+        "23 Q2",
+        {
+            "Cost of goods sold": null
+        },
+        {
+            "Africa ": 10980
+        },
+        {
+            "Depreciation and amortization": null
+        },
+        {
+            "Short-term investments": null
+        }
+    ],
+    [
+        "KO",
+        "23 Q2",
+        {
+            "Cost of goods sold": null
+        },
+        {
+            "Africa ": null
+        },
+        {
+            "Depreciation and amortization": null
+        },
+        {
+            "Short-term investments": null
+        }
+    ],
+    [
+        "KO",
+        "23 Q2",
+        {
+            "Cost of goods sold": 4317
+        },
+        {
+            "Africa ": null
+        },
+        {
+            "Depreciation and amortization": 286
+        },
+        {
+            "Short-term investments": 1166
+        }
+    ],
+    [
+        "KO",
+        "23 Q2",
+        {
+            "Cost of goods sold": 4317
+        },
+        {
+            "Consolidated": 10980
+        },
+        {
+            "Depreciation and amortization": 286
+        },
+        {
+            "Short-term investments": 1166
+        }
+    ],
+    [
+        "KO",
+        "23 Q2",
+        {
+            "Cost of goods sold": 4317
+        },
+        {
+            "Consolidated": 10980
+        },
+        {
+            "Depreciation and amortization": 286
+        },
+        {
+            "Short-term investments": 1166
+        }
+    ],
+    [
+        "KO",
+        "23 Q2",
+        {
+            "Cost of goods sold": 4317
+        },
+        {
+            "Africa": 2024
+        },
+        {
+            "Depreciation and amortization": 286
+        },
+        {
+            "Short-term investments": 1166
+        }
+    ],
+    [
+        "KO",
+        "23 Q2",
+        {
+            "Cost of goods sold": 4317
+        },
+        {
+            "Africa": 2024
+        },
+        {
+            "Depreciation and amortization": 286
+        },
+        {
+            "Short-term investments": 1166
+        }
+    ],
+    [
+        "KO",
+        "23 Q2",
+        {
+            "Cost of goods sold": 4317
+        },
+        {
+            "Europe, Middle East &\nAfrica": 2024
+        },
+        {
+            "Depreciation and amortization": 286
+        },
+        {
+            "Short-term investments": 1166
+        }
+    ]
+]
