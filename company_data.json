@@ -1,1 +1,31 @@
-{"name": "SBUX", "format": "HTML", "quarter": "23 Q2", "data": ["\u7f8e\u570b\u9580\u5e02\u6578", "\u4e2d\u570b\u9580\u5e02\u6578", "\u5168\u7403\u9580\u5e02\u6578"]}
+[
+    {
+        "name": "SBUX",
+        "format": "PDF",
+        "quarter": "23 Q2",
+        "data": [
+            "JI3",
+            "X96",
+            "2L4"
+        ]
+    },
+    {
+        "name": "KO",
+        "format": "PDF",
+        "quarter": "23 Q2",
+        "data": [
+            "JI3",
+            "X96"
+        ]
+    },
+    {
+        "name": "SBUX",
+        "format": "PDF",
+        "quarter": "23 Q2",
+        "data": [
+            "JI3",
+            "X96",
+            "2KL4"
+        ]
+    }
+]
