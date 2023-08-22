@@ -1,26 +1,11 @@
 [
     {
         "name": "KO",
-        "quarter": "23 Q2",
+        "quarter": "24 Q2",
         "tracked_data_group": [
             [
-                "Europe, Middle East &\nAfrica",
-                "Operating Segments and Corporate",
-                "1"
-            ],
-            [
-                "Depreciation and amortization",
-                "Consolidated Statements of Cash Flows",
-                "1"
-            ],
-            [
-                "Short-term investments",
-                "Consolidated Balance Sheets",
-                "1"
-            ],
-            [
-                "Cost of goods sold",
-                "Consolidated Statements of Income",
+                "EPS",
+                "Coca-Cola Reports First Quarter 2023 Results",
                 "1"
             ]
         ]

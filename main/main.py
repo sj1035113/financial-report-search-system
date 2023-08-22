@@ -25,37 +25,43 @@ class company_about_json(about_json):
         self.company_name = company_name
 
 
-    def load_new_data(self):
+    def load_new_data(self ,exist_company = None):
         while True:
+            comfirm_to_continue = True
             input_str = input("輸入公司名稱(大寫): ")
+            for company in exist_company:
+                if input_str == company:
+                    print('ISSUE: 此公司已在資料庫內\n')
+                    comfirm_to_continue = False
+                    break
             if  re.fullmatch(r"\b[A-Z]+\b",input_str):
                 self.company_name = input_str
                 break
             else:
-                print("輸入錯誤")
-
-        while True:
-            input_str = input("輸入目前第幾季: ")
-            if  re.fullmatch(r"\d{2} Q\d" ,input_str):
-                self.quarter = input_str
-                break
-            else:
-                print("輸入錯誤(例如:23 Q2)")
-
-        self.tracked_data_group = self.assemble_data()
-        self.Data_moved_from_main()
+                print("ISSUE: 輸入錯誤")
+        if comfirm_to_continue == True:
+            while True:
+                input_str = input("輸入目前第幾季: ")
+                if  re.fullmatch(r"\d{2} Q\d" ,input_str):
+                    self.quarter = input_str
+                    break
+                else:
+                    print("ISSUE: 輸入錯誤(例如:23 Q2)")
+        if comfirm_to_continue == True:
+            self.tracked_data_group = self.assemble_data()
+            self.Data_moved_from_main()
 
 
     def search_data_and_show_data(self):
         whether_find = False
-        all_companies_list = self.put_data_to_main()
+        companies_list = self.put_data_to_main()
         if self.company_name == 'all':
-            for data_dict in all_companies_list:
+            for data_dict in companies_list:
                 print(f"公司名: {data_dict.get('name')}")
                 print(f"季度: {data_dict.get('quarter')}")
                 print(f"追蹤數據:{data_dict.get('tracked_data_group')}")
         else:
-            for data_dict in all_companies_list:
+            for data_dict in companies_list:
                 if data_dict.get('name') == self.company_name:  #data_list.get('公司名') == company_name:
                     print("confirm")
                     print(f"公司名: {data_dict.get('name')}")
@@ -66,12 +72,14 @@ class company_about_json(about_json):
                 print("此公司未在數據庫")  
 
 
-    def change_data(self):       #目前僅針對我們還沒傳入company_data.json的數據進行更改但我們應該是要針對裡面的數據進行更改(目前插在沒有把原資料刪除)
-        list = []
+    def change_data(self, mode):       #目前僅針對我們還沒傳入company_data.json的數據進行更改但我們應該是要針對裡面的數據進行更改(目前插在沒有把原資料刪除)
+        list = []                      #上面的mode分為自動跟手動
         index = 0
-        all_companies_list = self.put_data_to_main()
-        for data_dict in all_companies_list:
+        confirm_to_continue = True    #確認是否要繼續。因為可能會出現不滿足條件，所以不能繼續執行
+        companies_list = self.put_data_to_main()    #將資料庫的資料傳入這個函式，尋找我們的目標公司
+        for data_dict in companies_list:
                 if data_dict.get('name') == self.company_name:
+
                     self.company_name = data_dict.get('name')
                     print(f'公司名:{self.company_name}')
                     self.quarter = data_dict.get('quarter')
@@ -81,31 +89,48 @@ class company_about_json(about_json):
                 else:
                     index+=1
         list = [self.company_name, self.quarter, self.tracked_data_group]
-        if None in list:
-            print("此公司未曾輸入過")
-        else:
-           print(f"\n公司名 :{self.company_name}\n季度:{self.quarter}\n追蹤數據:{self.tracked_data_group}")
-           change_data = input("輸入更改數據: ")
-           match change_data:
-                case"公司名":
-                    while True:
-                        input_str = input("輸入公司名稱(大寫): ")
-                        if  re.fullmatch(r"\b[A-Z]+\b",input_str):
-                            self.company_name = input_str
-                            break
-                        else:
-                            print("輸入錯誤")
-                case"季度":
-                    while True:
-                        input_str = input("輸入目前第幾季: ")
-                        if  re.fullmatch(r"\d{2} Q\d" ,input_str):
-                            self.quarter = input_str
-                            break
-                        else:
-                            print("輸入錯誤(例如:23 Q2)")
-                case"追蹤數據":
-                    self.tracked_data_group = self.assemble_data()
-        self.Data_moved_from_main(index)
+        if mode == 'manual_mode': 
+            if None in list:
+                print("此公司未曾輸入過")
+                confirm_to_continue = False
+            else:
+                print(f"\n公司名 :{self.company_name}\n季度:{self.quarter}\n追蹤數據:{self.tracked_data_group}")
+                change_data = input("輸入更改數據: ")
+                match change_data:
+                    case"公司名":
+                        while True:
+                            input_str = input("輸入公司名稱(大寫): ")
+                            if  re.fullmatch(r"\b[A-Z]+\b",input_str):
+                                self.company_name = input_str
+                                break
+                            else:
+                                print("ISSUE 輸入錯誤")
+                    case"季度":
+                        while True:
+                            input_str = input("輸入目前第幾季: ")
+                            if  re.fullmatch(r"\d{2} Q\d" ,input_str):
+                                self.quarter = input_str
+                                break
+                            else:
+                                print("ISSUE: 輸入錯誤(例如:23 Q2)")
+                    case"追蹤數據":
+                        self.tracked_data_group = self.assemble_data()
+        if mode == 'Automatically change quarterly data':
+            present_quarter_number = self.quarter[-1]
+            present_year_number = self.quarter[:2]
+            present_quarter_number = int(present_quarter_number)
+            present_year_number = int(present_year_number)
+            if present_quarter_number == 4:
+                present_year_number += 1
+                present_quarter_number = 1
+                self.quarter = str(present_year_number)+' Q'+str(present_quarter_number)
+            else:
+                present_quarter_number = int(present_quarter_number)
+                present_quarter_number += 1
+                self.quarter = str(present_year_number)+' Q'+str(present_quarter_number)
+
+        if confirm_to_continue == True:
+            self.Data_moved_from_main(index)
                
 
     def return_quarter_info_and_tracked_data_group(self):  #向外傳
@@ -142,7 +167,7 @@ class company_about_json(about_json):
     def Data_moved_from_main(self, del_index = None): #內部呼叫用
         list = [self.company_name, self.quarter, self.tracked_data_group]
         if None in list:
-            print("\nissue:缺少資料")
+            print("\nISSUE: 缺少資料")
 
         else:
             print(f"\n公司名 :{self.company_name}\n季度:{self.quarter}\n追蹤數據:{self.tracked_data_group}")
@@ -175,12 +200,13 @@ class company_about_json(about_json):
 
 
 class data_about_json(about_json):
-    list = []
+    include_info_list = []
+    list_for_creation = []
     def __init__(self, company_name):
         self.company_name = company_name
 
-    def get_list(self):
-        return self.list
+    def get_list_for_creation(self):
+        return self.list_for_creation
     
     
     def get_company_name(self):
@@ -190,37 +216,27 @@ class data_about_json(about_json):
     def put_data_to_main(self):
         company_file_name = self.company_name + r'.json'
         company_file_location = os.path.join(r'C:\Users\sj103\OneDrive\文件\finacial report\main\個別公司數據', company_file_name)
-        print(f"file_location: {company_file_location}")
         if os.path.exists(company_file_location):
-            print('檔案存在')
+            print('公司存在')
         else :
-            print("檔案不存在")
-            try:
-                with open(company_file_location, 'w') as file:
-                    init_list = []
-                    json.dump(init_list, file)
-                    print ("檔案新增成功")
+            print("ISSUE: 公司不存在")
+            return
 
-            except:
-                print('檔案新增錯誤')
-
-
-        print('test3')
         with open(company_file_location, 'r') as file:
-            list = json.load(file)
-            return list
+            self.include_info_list = json.load(file)
+            return self.include_info_list
 
 
     def creat_new_quarter_data(self, quarter):
-        self.list = [self.company_name, quarter]
+        self.list_for_creation = [self.company_name, quarter]
 
 
-    def assemble_data(self, item, value):     #需要先用creat_new_quarter_data建立一個list，裡面包含季度資訊，此函式僅支援新建dict並把他放入list
+    def assemble_data_and_append_to_list_for_creation(self, item, value):       #需要先用creat_new_quarter_data建立一個list，裡面包含季度資訊，此函式僅支援新建dict並把他放入list
         dict = {item : value}
-        self.list.append(dict)
+        self.list_for_creation.append(dict)
 
 
-    def Data_moved_from_main(self, list):          #這邊的list是要準備送出程式的list,也就是包含所有資訊dict的list
+    def Data_moved_from_main(self, sender_list):          #這邊的list是要準備送出程式的list,也就是包含所有資訊dict的list
         temporary_list = []
         company_file_name = self.company_name + r'.json'
         company_file_location = os.path.join(r'C:\Users\sj103\OneDrive\文件\finacial report\main\個別公司數據', company_file_name)
@@ -238,12 +254,32 @@ class data_about_json(about_json):
         with open(company_file_location, 'r') as file:
             temporary_list = json.load(file)
         with open(company_file_location, 'w') as file:
-            temporary_list.append(list)
+            temporary_list.append(sender_list)
             json.dump(temporary_list, file, indent=4)
 
 
-    def show_data(self):
-        pass
+    def show_data(self, mode, search_target = None):
+        match mode:
+            case "quarter":
+                confirm_to_continue = None
+                for single_quarter_list in self.include_info_list:
+                    if single_quarter_list[1] == search_target:
+                        for item in single_quarter_list[2:]:
+                            for key, value in item.items():
+                                print(f"{key}: {value}")
+                                confirm_to_continue = True
+                if confirm_to_continue != True:
+                    print('ISSUE: 此季度未在資料庫')
+            case 'item':
+                for single_quarter_list in self.include_info_list:
+                    for item in single_quarter_list:
+                        if type(item) == dict:
+                            if search_target in item.keys():
+                                print(f"{single_quarter_list[1]}:{item[search_target]}")
+            case 'all':
+                for single_quarter_list in self.include_info_list:
+                    print(f'{single_quarter_list}\n')
+                
 
 
 class SearchByPDF:
@@ -291,50 +327,121 @@ class SearchByPDF:
     
 
 def main():
-    mode = input("1:有關公司基本資料\n2:個別公司資料管理\n3:載入新財報\n請輸入要使用的項目: ")
-    match mode:
-        case "1":
-            company_name = None
-            service = input("1:新增公司資訊\n2:改變公司資訊\n3:搜尋公司資訊\n4:顯示所以公司資訊\n請輸入要使用的服務: ")
-            if service == '2' or service == '3':
-                #print('test')
-                company_name = input("公司名稱:")
-            elif service =='1':
-                company_name == 'default'
-            elif service == '4':
-                company_name = 'all' 
+    while True:
+        mode = input("1:有關公司基本資料\n2:個別公司資料管理\n3:載入新財報\n4:離開\n請輸入要使用的項目: ")
+        match mode:
+            case "1":
+                company_name = None
+                while True:
+                    service = input("1:新增公司資訊\n2:改變公司資訊\n3:搜尋公司資訊\n4:顯示所有公司資訊\n請輸入要使用的服務: ")
+                    if service == '2' or service == '3':
+                        while True:
+                            input_str = input("公司名稱(大寫):")
+                            if  re.fullmatch(r"\b[A-Z]+\b",input_str):
+                                company_name = input_str
+                                break
+                            else: 
+                                print('ISSUE: 輸入錯誤')
+                        break
+                    elif service =='1':
+                        company_name == 'default'
+                        break
+                    elif service == '4':
+                        company_name = 'all' 
+                        break
+                    else:
+                        print('ISSUE: 輸入錯誤')
 
-            operate_company_essential_data = company_about_json(company_name)
-            match service:
-                case "1":
-                    operate_company_essential_data.load_new_data()
-                case "2":
-                    operate_company_essential_data.change_data()
-                case "3":
-                    operate_company_essential_data.search_data_and_show_data()  
-                case "4":
-                    operate_company_essential_data.search_data_and_show_data()
-        case '2':
-            service = input('1:查看季度資料\n2:查看特定數據過往資料\n3:查看所有數據')
-        case "3":
-            company_name = input("要新增哪一間公司: ")
-            file_location  = input("請輸入檔案位置: ")
-            file_location = fr'{file_location}'
-            ComapanyAboutJson = company_about_json(company_name)
-            DataAboutJson = data_about_json(company_name) 
-            quarter, tracked_data_group = ComapanyAboutJson.return_quarter_info_and_tracked_data_group()
+                operate_company_essential_data = company_about_json(company_name)       #在這裡宣告而不適放在match裡沒關係，因為程式執行一次，結著就會跳出重新再宣告一個
+                match service:
+                    case "1":
+                        list = []
+                        all_list = operate_company_essential_data.put_data_to_main()
+                        for item in all_list:
+                            list.append(item['name'])
+                        operate_company_essential_data.load_new_data(list)
+                    case "2":
+                        operate_company_essential_data.change_data ('manual_mode')
+                    case "3":
+                        operate_company_essential_data.search_data_and_show_data()  
+                    case "4":
+                        operate_company_essential_data.search_data_and_show_data()
+            case '2':
+                confirm_to_continue = None
+                company_name = None
+                service = input('1:查看季度資料\n2:查看特定數據過往資料\n3:查看所有數據\n請輸入要使用的服務:')
+                while True:
+                    input_str = input('想要查看哪一間公司(大寫): ')
+                    if re.fullmatch(r'\b[A-Z]+\b',input_str):
+                        company_name = input_str
+                        break
+                    else:
+                        print('ISSUE: 輸入錯誤')
+                with open(r"C:\Users\sj103\OneDrive\文件\finacial report\main\company_data.json", "r") as file:
+                    tem_list = json.load(file)
+                    for tem_dict in tem_list:
+                        if tem_dict.get('name') == company_name:
+                            confirm_to_continue = True
+                if confirm_to_continue ==True:
+                    watch_data = data_about_json(company_name)
+                    watch_data.put_data_to_main()
+                    match service:
+                        case '1':
+                            while True:
+                                input_str = input('想要查看哪一季度資料: ')
+                                if  re.fullmatch(r"\d{2} Q\d" ,input_str):
+                                    quarter = input_str
+                                    break
+                                else:
+                                    print('ISSUE: 輸入錯誤(例如:23 Q2)')
+                            watch_data.show_data('quarter', quarter)        #前面那個為模式選擇後面為查看的季度
+                        case '2':
+                            item = input("想要查看哪一個項目: ")
+                            watch_data.show_data('item', item)
+                        case '3':
+                            watch_data.show_data('all')
+                else:
+                    print('ISSUE: 此公司未在資料庫')
+
+
+            case "3":
+                while True:
+                    input_str = input('要新增哪一間公司: ')
+                    if re.fullmatch(r'\b[A-Z]+\b', input_str):
+                        company_name = input_str
+                        break
+                    else:
+                        print('ISSUE: 輸入錯誤')
+
+                file_location  = input("請輸入檔案位置: ")
+                file_location = fr'{file_location}'
+                ComapanyAboutJson = company_about_json(company_name)
+                DataAboutJson = data_about_json(company_name) 
+                quarter, tracked_data_group = ComapanyAboutJson.return_quarter_info_and_tracked_data_group()
             
 
-            DataAboutJson.creat_new_quarter_data(quarter)
-            for index in range(len(tracked_data_group)):
-                searchPDF = SearchByPDF(file_location,tracked_data_group[index-1][0], tracked_data_group[index-1][1], tracked_data_group[index-1][2] )
-                value = searchPDF.search()
-                print(value)
-                DataAboutJson.assemble_data(tracked_data_group[index-1][0], value)
-            list = DataAboutJson.get_list()
-            print(list)
-            DataAboutJson.Data_moved_from_main(list)
-
+                DataAboutJson.creat_new_quarter_data(quarter)
+                for index in range(len(tracked_data_group)):
+                    searchPDF = SearchByPDF(file_location,tracked_data_group[index-1][0], tracked_data_group[index-1][1], tracked_data_group[index-1][2] )
+                    value = searchPDF.search()
+                    print(value)
+                    DataAboutJson.assemble_data_and_append_to_list_for_creation(tracked_data_group[index-1][0], value)
+                list = DataAboutJson.get_list_for_creation()
+                print(list)
+                DataAboutJson.Data_moved_from_main(list)
+                while True:
+                    tem_variable = input('是否季度自動加一(輸入yes or no): ') 
+                    if tem_variable == 'yes':
+                        ComapanyAboutJson.change_data('Automatically change quarterly data')
+                        break
+                    elif tem_variable == 'no':
+                        break
+                    else:
+                        print('ISSUE: 輸入錯誤')
+            case '4':
+                break
+            case _:
+                print('ISSUE: 輸入錯誤')
 
 if __name__ == '__main__':
     main()
