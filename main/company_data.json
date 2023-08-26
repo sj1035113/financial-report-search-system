@@ -1,11 +1,16 @@
 [
     {
         "name": "KO",
-        "quarter": "24 Q2",
+        "quarter": "13 Q4",
         "tracked_data_group": [
             [
-                "EPS",
-                "Coca-Cola Reports First Quarter 2023 Results",
+                "Net Operating Revenues",
+                "Net Operating Revenues",
+                "2"
+            ],
+            [
+                "Short-term investments",
+                "Consolidated Balance Sheets",
                 "1"
             ]
         ]

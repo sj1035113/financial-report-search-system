@@ -1,228 +1,101 @@
 [
     [
         "KO",
-        "23 Q2",
+        "11 Q4",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
         {
-            "Cost of goods sold": null
+            "Net Operating Revenues": 8611
         },
         {
-            "Africa ": 10980
-        },
-        {
-            "Depreciation and amortization": null
-        },
-        {
-            "Short-term investments": null
+            "Short-term investments": 1242
         }
     ],
     [
         "KO",
-        "23 Q2",
+        "12 Q1",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
         {
-            "Cost of goods sold": null
+            "Net Operating Revenues": 8611
         },
         {
-            "Africa ": null
-        },
-        {
-            "Depreciation and amortization": null
-        },
-        {
-            "Short-term investments": null
+            "Short-term investments": 1242
         }
     ],
     [
         "KO",
-        "23 Q2",
+        "12 Q2",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
         {
-            "Cost of goods sold": 4317
+            "Net Operating Revenues": 8611
         },
         {
-            "Africa ": null
+            "Short-term investments": 1242
+        }
+    ],
+    [
+        "KO",
+        "13 Q1",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
+        {
+            "Net Operating Revenues": 8611
         },
         {
-            "Depreciation and amortization": 286
+            "Short-term investments": 1242
+        }
+    ],
+    [
+        "KO",
+        "13 Q2",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2018-02-16_The_Coca_Cola_Company_Reports_Strong_Operating_929.pdf",
+        {
+            "Net Operating Revenues": 9409
         },
         {
-            "Short-term investments": 1166
+            "Short-term investments": 9352
         }
     ],
     [
         "KO",
-        "23 Q2",
+        "13 Q3",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
         {
-            "Cost of goods sold": 4317
+            "Net Operating Revenues": 8611
         },
         {
-            "Consolidated": 10980
+            "Short-term investments": 1242
+        }
+    ],
+    [
+        "KO",
+        "13 Q4",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
+        {
+            "Net Operating Revenues": 8611
         },
         {
-            "Depreciation and amortization": 286
+            "Short-term investments": 1242
+        }
+    ],
+    [
+        "KO",
+        "22 Q1",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2018-02-16_The_Coca_Cola_Company_Reports_Strong_Operating_929.pdf",
+        {
+            "Net Operating Revenues": 9409
         },
         {
-            "Short-term investments": 1166
+            "Short-term investments": 9352
         }
     ],
     [
         "KO",
-        "23 Q2",
+        "22 Q4",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/db/734/8024/earnings_release/Coca-Cola+2023+Q2+Earnings+Release_Full+Release_7.26.23+FINAL.pdf",
         {
-            "Cost of goods sold": 4317
+            "Net Operating Revenues": 11325
         },
         {
-            "Consolidated": 10980
-        },
-        {
-            "Depreciation and amortization": 286
-        },
-        {
-            "Short-term investments": 1166
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "Cost of goods sold": 4317
-        },
-        {
-            "Africa": 2024
-        },
-        {
-            "Depreciation and amortization": 286
-        },
-        {
-            "Short-term investments": 1166
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "Cost of goods sold": 4317
-        },
-        {
-            "Africa": 2024
-        },
-        {
-            "Depreciation and amortization": 286
-        },
-        {
-            "Short-term investments": 1166
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "Cost of goods sold": 4317
-        },
-        {
-            "Europe, Middle East &\nAfrica": 2024
-        },
-        {
-            "Depreciation and amortization": 286
-        },
-        {
-            "Short-term investments": 1166
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q2",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q3",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q4",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q4",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "23 Q4",
-        {
-            "EPS": null
-        }
-    ],
-    [
-        "KO",
-        "24 Q1",
-        {
-            "EPS": null
+            "Short-term investments": 1867
         }
     ]
 ]
