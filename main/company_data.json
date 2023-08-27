@@ -1,16 +1,72 @@
 [
     {
-        "name": "KO",
-        "quarter": "13 Q4",
+        "name": "INIT",
+        "quarter": "23 Q2",
         "tracked_data_group": [
             [
-                "Net Operating Revenues",
-                "Net Operating Revenues",
-                "2"
+                "INIT",
+                "INIT",
+                "INIT"
+            ]
+        ]
+    },
+    {
+        "name": "KO",
+        "quarter": "23 Q1",
+        "tracked_data_group": [
+            [
+                "Net Income Attributable to Shareowners of The Coca-Cola Company",
+                "Consolidated Statements of Income",
+                "1"
             ],
             [
-                "Short-term investments",
-                "Consolidated Balance Sheets",
+                "Operating Income",
+                "Consolidated Statements of Income",
+                "1"
+            ],
+            [
+                "Net Operating Revenues",
+                "Consolidated Statements of Income",
+                "1"
+            ],
+            [
+                "Africa",
+                "Operating Segments",
+                "1"
+            ],
+            [
+                "Latin America",
+                "Operating Segments",
+                "1"
+            ],
+            [
+                "North America",
+                "Operating Segments",
+                "1"
+            ],
+            [
+                "Asia Pacific",
+                "Operating Segments",
+                "1"
+            ],
+            [
+                "Global Ventures",
+                "Operating Segments",
+                "1"
+            ],
+            [
+                "Bottling Investments",
+                "Operating Segments",
+                "1"
+            ],
+            [
+                "Corporate",
+                "Operating Segments",
+                "1"
+            ],
+            [
+                "Eliminations",
+                "Operating Segments",
                 "1"
             ]
         ]

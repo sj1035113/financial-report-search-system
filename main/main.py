@@ -7,7 +7,7 @@ import requests
 from io import BytesIO
 
 gc = pygsheets.authorize(service_file = r"C:\Users\sj103\Downloads\financial-report-396808-7cfeec8d9bd9.json")
-key = "1Trp2jTsoUR97jOW9OerTNoUO1mcY77PAYlEX7Okj67w"
+key = "1ySSrFMaCFnUQHHWeOFy0ZkR4oHQD7hYgjDRqv8cODGs"
 sheet = gc.open_by_key(key)
 number_pattern = r"\(?\d{1,3}(?:,\d{3})*(?:\.\d+)?\)?" 
 
@@ -384,12 +384,14 @@ class operation_about_google_sheet():
 
     def creat_and_init_new_sheet(self, company_list, item_list):       
 #創建新的工作表，company_list 是存放在json的資料，理論上兩者會相同，item_list是要放入new_sheet的item
+        whether_find = True
         for tem_company_name in company_list:
             if tem_company_name == self.company_name:
                 return
             else:
                 whether_find = False
         if whether_find == False:
+            print("test")
             new_worksheet = sheet.add_worksheet(self.company_name)
             new_worksheet.update_values('B1', [item_list])
 
@@ -459,15 +461,21 @@ class operation_about_google_sheet():
     def change_item_data(self, item_list):    #更改新的項目資料
         worksheet = sheet.worksheet_by_title(self.company_name)
         worksheet.update_values('B1', [item_list])
-    
+
 
     def del_data(self ,row):        #刪除行
         worksheet = sheet.worksheet_by_title(self.company_name)
         worksheet.delete_rows(row)
 
+
     def clear_data(self, start_cell = None, end =None):        #清除整個列表
         worksheet = sheet.worksheet_by_title(self.company_name)
         worksheet.clear(start_cell)
+
+
+    def update_row(self, row, data_list, col_offset = 0):
+        worksheet = sheet.worksheet_by_title(self.company_name)
+        worksheet.update_row(row, data_list, col_offset)
 
 def main():
     while True:
@@ -533,8 +541,6 @@ def main():
                                 change_essential_data = company_about_json(company_name)
                                 list_of_data_in_a_specific_company = DataAboutJson.put_data_to_main()
                                 quarter, tracked_data_group = change_essential_data.return_quarter_info_and_tracked_data_group()
-                                OperationAboutGoogleSheet.clear_data('A3')          #將包含資料的數據組全部刪除
-                                print(f"item_list = {item_list}")
                                 for quarter_index in range(len(list_of_data_in_a_specific_company)):
                                     url = list_of_data_in_a_specific_company[quarter_index][2]
                                     quarter = list_of_data_in_a_specific_company[quarter_index][1]
@@ -545,7 +551,7 @@ def main():
                                         value = searchPDF.search()
                                         data_list.append(value)         #data_list 給google sheet用
                                         DataAboutJson.assemble_data_and_append_to_list_for_creation(tracked_data_group[item_index][0], value)
-                                        dict_list = DataAboutJson.get_list_for_creation()       #dict_list給json用
+                                        dict_list = DataAboutJson.get_list_for_creation()       #dict_DiCt給json用
                                     DataAboutJson.Data_moved_from_main(dict_list)
                                     print(data_list)
                                     OperationAboutGoogleSheet.load_new_quarter_data(data_list, quarter)
@@ -556,9 +562,11 @@ def main():
                     case "3":
                         operate_company_essential_data = company_about_json(company_name)
                         operate_company_essential_data.search_data_and_show_data()  
+
                     case "4":
                         operate_company_essential_data = company_about_json(company_name)
                         operate_company_essential_data.search_data_and_show_data()
+
                     case '5':
                         pass
             
@@ -612,7 +620,7 @@ def main():
 
             case "3":
                 while True:
-                    service = input("1.往後新增新的資料\n2.更改或添加舊有資料\n3.離開\n請選擇服務: ")
+                    service = input("1.往後新增新的資料\n2.更改或添加舊有資料\n3.連續更新季度\n4.離開\n請選擇服務: ")
                     if service == '1' or service == '2' or service == '3':
                         break
                     else:
@@ -666,13 +674,74 @@ def main():
                                 break
                             else:
                                 print('ISSUE: 輸入錯誤')
+                
                 elif service == '3':
+                    start_qaurter_index = None
+                    end_quarter_index = None
+                    company_name = None
+                    quarter_list = []
+                    while True:
+                        input_str = input('要新增哪一間公司: ')
+                        if re.fullmatch(r'\b[A-Z]+\b', input_str):
+                            company_name = input_str
+                            break
+                        else:
+                            print('ISSUE: 輸入錯誤')
+                    operate_company_essential_data = company_about_json(company_name)
+                    OperationAboutGoogleSheet = operation_about_google_sheet(company_name)
+                    DataAboutJson = data_about_json(company_name)
+
+                    list_of_data_in_a_specific_company = DataAboutJson.put_data_to_main()
+                    quarter, tracked_data_group = operate_company_essential_data.return_quarter_info_and_tracked_data_group()
+                    quarter = None
+                    for list in list_of_data_in_a_specific_company:     #獲取所有季度，有沒有這一行其實都沒差
+                        quarter_list.append(list[1]) 
+                    print(f"所有季度: {quarter_list}")
+                    while  True:
+                        input_str = input("要從哪一個季度開始(例:23 Q2): ")
+                        whether_find = False
+                        for quarter_index in range(len(quarter_list)):
+                            if quarter_list[quarter_index] == input_str:
+                                start_qaurter_index = quarter_index
+                                whether_find = True
+                        if whether_find == True:
+                            break
+                        else:
+                            print("此季度未輸入過")
+
+                    while  True:
+                        input_str = input("哪一個季度結束(例:23 Q2): ")
+                        whether_find = False
+                        for quarter_index in range(len(quarter_list)):
+                            if quarter_list[quarter_index] == input_str:
+                                end_quarter_index = quarter_index
+                                whether_find = True
+                        if whether_find == True:
+                            break
+                        else:
+                            print("此季度未輸入過")           
+                    
+                    for quarter_index in range(start_qaurter_index, end_quarter_index+1):
+                        url = list_of_data_in_a_specific_company[quarter_index][2]
+                        quarter = list_of_data_in_a_specific_company[quarter_index][1]
+                        DataAboutJson.creat_new_quarter_data(quarter, url)
+                        data_list = []
+                        dict_list = []
+                        for item_index in range(len(tracked_data_group)):
+                            searchPDF = SearchByPDF(url, tracked_data_group[item_index][0], tracked_data_group[item_index][1], tracked_data_group[item_index][2] )
+                            value = searchPDF.search()
+                            data_list.append(value)         #data_list 給google sheet用
+                            DataAboutJson.assemble_data_and_append_to_list_for_creation(tracked_data_group[item_index][0], value)
+                            dict_list = DataAboutJson.get_list_for_creation()       #dict_list給json用
+                        DataAboutJson.Data_moved_from_main(dict_list)
+                        OperationAboutGoogleSheet.update_row(quarter_index+3, data_list, 1)
+                
+                elif service == '4':
                     pass
             
             
             case '4':
                 break
-
 
 
             case _:

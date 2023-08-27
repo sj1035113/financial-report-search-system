@@ -1,101 +1,838 @@
 [
     [
         "KO",
-        "11 Q4",
-        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
+        "18 Q1",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2018-04-24_The_Coca_Cola_Company_Reports_Solid_Operating_935.pdf",
         {
-            "Net Operating Revenues": 8611
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 1368
         },
         {
-            "Short-term investments": 1242
+            "Operating Income": 1811
+        },
+        {
+            "Net Operating Revenues": 7626
+        },
+        {
+            "Europe, Middle East & Africa": null
+        },
+        {
+            "Latin America": 998
+        },
+        {
+            "North America": 2680
+        },
+        {
+            "Asia Pacific": 1218
+        },
+        {
+            "Global Ventures": null
+        },
+        {
+            "Bottling Investments": null
+        },
+        {
+            "Corporate": 18
+        },
+        {
+            "Eliminations": -180
         }
     ],
     [
         "KO",
-        "12 Q1",
-        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
+        "18 Q2",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2018-04-24_The_Coca_Cola_Company_Reports_Solid_Operating_935.pdf",
         {
-            "Net Operating Revenues": 8611
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 1368
         },
         {
-            "Short-term investments": 1242
+            "Operating Income": 1811
+        },
+        {
+            "Net Operating Revenues": 7626
+        },
+        {
+            "Europe, Middle East & Africa": null
+        },
+        {
+            "Latin America": 998
+        },
+        {
+            "North America": 2680
+        },
+        {
+            "Asia Pacific": 1218
+        },
+        {
+            "Global Ventures": null
+        },
+        {
+            "Bottling Investments": null
+        },
+        {
+            "Corporate": 18
+        },
+        {
+            "Eliminations": -180
         }
     ],
     [
         "KO",
-        "12 Q2",
-        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
+        "18 Q3",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2018-10-30_Coca_Cola_Reports_Strong_Operating_Results_for_953.pdf",
         {
-            "Net Operating Revenues": 8611
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 1880
         },
         {
-            "Short-term investments": 1242
+            "Operating Income": 2526
+        },
+        {
+            "Net Operating Revenues": 8245
+        },
+        {
+            "Europe, Middle East & Africa": null
+        },
+        {
+            "Latin America": 1003
+        },
+        {
+            "North America": 3127
+        },
+        {
+            "Asia Pacific": 1423
+        },
+        {
+            "Global Ventures": null
+        },
+        {
+            "Bottling Investments": null
+        },
+        {
+            "Corporate": 14
+        },
+        {
+            "Eliminations": -203
         }
     ],
     [
         "KO",
-        "13 Q1",
-        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
+        "18 Q4",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2019-02-14_Coca_Cola_Reports_Strong_Results_for_Fourth_962.pdf",
         {
-            "Net Operating Revenues": 8611
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 6434
         },
         {
-            "Short-term investments": 1242
+            "Operating Income": 1636
+        },
+        {
+            "Net Operating Revenues": 7058
+        },
+        {
+            "Europe, Middle East & Africa": null
+        },
+        {
+            "Latin America": 982
+        },
+        {
+            "North America": 2844
+        },
+        {
+            "Asia Pacific": 1039
+        },
+        {
+            "Global Ventures": null
+        },
+        {
+            "Bottling Investments": null
+        },
+        {
+            "Corporate": 8
+        },
+        {
+            "Eliminations": -110
         }
     ],
     [
         "KO",
-        "13 Q2",
-        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2018-02-16_The_Coca_Cola_Company_Reports_Strong_Operating_929.pdf",
+        "19 Q1",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2019-04-23_Coca_Cola_Reports_Solid_Operating_Results_in_967.pdf",
         {
-            "Net Operating Revenues": 9409
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 1678
         },
         {
-            "Short-term investments": 9352
+            "Operating Income": 2336
+        },
+        {
+            "Net Operating Revenues": 8020
+        },
+        {
+            "Europe, Middle East & Africa": 1772
+        },
+        {
+            "Latin America": 896
+        },
+        {
+            "North America": 2683
+        },
+        {
+            "Asia Pacific": 1187
+        },
+        {
+            "Global Ventures": 585
+        },
+        {
+            "Bottling Investments": 996
+        },
+        {
+            "Corporate": 32
+        },
+        {
+            "Eliminations": -131
         }
     ],
     [
         "KO",
-        "13 Q3",
-        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
+        "19 Q2",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2019-07-23_Coca_Cola_Reports_Continued_Momentum_in_Second_11.pdf",
         {
-            "Net Operating Revenues": 8611
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2607
         },
         {
-            "Short-term investments": 1242
+            "Operating Income": 2988
+        },
+        {
+            "Net Operating Revenues": 9997
+        },
+        {
+            "Europe, Middle East & Africa": 1930
+        },
+        {
+            "Latin America": 1003
+        },
+        {
+            "North America": 3162
+        },
+        {
+            "Asia Pacific": 1540
+        },
+        {
+            "Global Ventures": 635
+        },
+        {
+            "Bottling Investments": 2026
+        },
+        {
+            "Corporate": 23
+        },
+        {
+            "Eliminations": -322
         }
     ],
     [
         "KO",
-        "13 Q4",
-        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
+        "19 Q3",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2019-07-23_Coca_Cola_Reports_Continued_Momentum_in_Second_11.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2607
+        },
+        {
+            "Operating Income": 2988
+        },
+        {
+            "Net Operating Revenues": 9997
+        },
+        {
+            "Europe, Middle East & Africa": 1930
+        },
+        {
+            "Latin America": 1003
+        },
+        {
+            "North America": 3162
+        },
+        {
+            "Asia Pacific": 1540
+        },
+        {
+            "Global Ventures": 635
+        },
+        {
+            "Bottling Investments": 2026
+        },
+        {
+            "Corporate": 23
+        },
+        {
+            "Eliminations": -322
+        }
+    ],
+    [
+        "KO",
+        "19 Q4",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2020-01-30_Coca_Cola_Reports_Strong_Growth_in_Fourth_Quarter__981.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2042
+        },
+        {
+            "Operating Income": 2164
+        },
+        {
+            "Net Operating Revenues": 9068
+        },
+        {
+            "Europe, Middle East\n& Africa": 1528
+        },
+        {
+            "Latin America": 1174
+        },
+        {
+            "North America": 2932
+        },
+        {
+            "Asia Pacific": 1138
+        },
+        {
+            "Global Ventures": 713
+        },
+        {
+            "Bottling Investments": 1920
+        },
+        {
+            "Corporate": 15
+        },
+        {
+            "Eliminations": -352
+        }
+    ],
+    [
+        "KO",
+        "20 Q1",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2020-04-21_Coca_Cola_Reports_First_Quarter_2020_Results_987.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2775
+        },
+        {
+            "Operating Income": 2380
+        },
+        {
+            "Net Operating Revenues": 8601
+        },
+        {
+            "Europe, Middle East\n& Africa": 1725
+        },
+        {
+            "Latin America": 930
+        },
+        {
+            "North America": 2850
+        },
+        {
+            "Asia Pacific": 1128
+        },
+        {
+            "Global Ventures": 573
+        },
+        {
+            "Bottling Investments": 1658
+        },
+        {
+            "Corporate": 31
+        },
+        {
+            "Eliminations": -294
+        }
+    ],
+    [
+        "KO",
+        "20 Q2",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2020-07-21_Coca_Cola_Reports_Second_Quarter_2020_Results_994.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 1779
+        },
+        {
+            "Operating Income": 1981
+        },
+        {
+            "Net Operating Revenues": 7150
+        },
+        {
+            "Europe, Middle East\n& Africa": 1210
+        },
+        {
+            "Latin America": 755
+        },
+        {
+            "North America": 2648
+        },
+        {
+            "Asia Pacific": 1183
+        },
+        {
+            "Global Ventures": 295
+        },
+        {
+            "Bottling Investments": 1263
+        },
+        {
+            "Corporate": -12
+        },
+        {
+            "Eliminations": -192
+        }
+    ],
+    [
+        "KO",
+        "20 Q3",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2020-10-22_Coca_Cola_Reports_Third_Quarter_2020_Results_1006.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 1737
+        },
+        {
+            "Operating Income": 2298
+        },
+        {
+            "Net Operating Revenues": 8652
+        },
+        {
+            "Europe, Middle East\n& Africa": 1693
+        },
+        {
+            "Latin America": 809
+        },
+        {
+            "North America": 3088
+        },
+        {
+            "Asia Pacific": 1334
+        },
+        {
+            "Global Ventures": 513
+        },
+        {
+            "Bottling Investments": 1475
+        },
+        {
+            "Corporate": 6
+        },
+        {
+            "Eliminations": -266
+        }
+    ],
+    [
+        "KO",
+        "20 Q4",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2021-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1012.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 1456
+        },
+        {
+            "Operating Income": 2338
+        },
         {
             "Net Operating Revenues": 8611
         },
         {
-            "Short-term investments": 1242
+            "Europe, Middle East\n& Africa": 1429
+        },
+        {
+            "Latin America": 1005
+        },
+        {
+            "North America": 2891
+        },
+        {
+            "Asia Pacific": 1077
+        },
+        {
+            "Global Ventures": 610
+        },
+        {
+            "Bottling Investments": 1869
+        },
+        {
+            "Corporate": 21
+        },
+        {
+            "Eliminations": -291
+        }
+    ],
+    [
+        "KO",
+        "21 Q1",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2021-04-19_Coca_Cola_Reports_First_Quarter_2021_1019.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2245
+        },
+        {
+            "Operating Income": 2722
+        },
+        {
+            "Net Operating Revenues": 9020
+        },
+        {
+            "Europe, Middle East\n& Africa": 1623
+        },
+        {
+            "Latin America": 909
+        },
+        {
+            "North America": 2937
+        },
+        {
+            "Asia Pacific": 1402
+        },
+        {
+            "Global Ventures": 570
+        },
+        {
+            "Bottling Investments": 1896
+        },
+        {
+            "Corporate": 17
+        },
+        {
+            "Eliminations": -334
+        }
+    ],
+    [
+        "KO",
+        "21 Q2",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2021-07-21_Coca_Cola_Reports_Strong_Results_in_Second_1031.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2641
+        },
+        {
+            "Operating Income": 3016
+        },
+        {
+            "Net Operating Revenues": 10129
+        },
+        {
+            "Europe, Middle East\n& Africa": 2017
+        },
+        {
+            "Latin America": 1067
+        },
+        {
+            "North America": 3381
+        },
+        {
+            "Asia Pacific": 1503
+        },
+        {
+            "Global Ventures": 707
+        },
+        {
+            "Bottling Investments": 1738
+        },
+        {
+            "Corporate": 17
+        },
+        {
+            "Eliminations": -301
+        }
+    ],
+    [
+        "KO",
+        "21 Q3",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2021-10-27_Coca_Cola_Reports_Continued_Momentum_and_Strong_1040.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2471
+        },
+        {
+            "Operating Income": 2898
+        },
+        {
+            "Net Operating Revenues": 10042
+        },
+        {
+            "Africa": 1915
+        },
+        {
+            "Latin America": 1137
+        },
+        {
+            "North America": 3479
+        },
+        {
+            "Asia Pacific": 1374
+        },
+        {
+            "Global Ventures": 753
+        },
+        {
+            "Bottling Investments": 1665
+        },
+        {
+            "Corporate": 25
+        },
+        {
+            "Eliminations": -306
+        }
+    ],
+    [
+        "KO",
+        "21 Q4",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-02-10_Coca_Cola_Reports_Fourth_Quarter_and_Full_Year_1046.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2414
+        },
+        {
+            "Operating Income": 1672
+        },
+        {
+            "Net Operating Revenues": 9464
+        },
+        {
+            "Africa": 1638
+        },
+        {
+            "Latin America": 1030
+        },
+        {
+            "North America": 3393
+        },
+        {
+            "Asia Pacific": 1012
+        },
+        {
+            "Global Ventures": 775
+        },
+        {
+            "Bottling Investments": 1904
+        },
+        {
+            "Corporate": 26
+        },
+        {
+            "Eliminations": -314
         }
     ],
     [
         "KO",
         "22 Q1",
-        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2018-02-16_The_Coca_Cola_Company_Reports_Strong_Operating_929.pdf",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/news/2022-04-25_Coca_Cola_Reports_First_Quarter_2022_1053.pdf",
         {
-            "Net Operating Revenues": 9409
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2781
         },
         {
-            "Short-term investments": 9352
+            "Operating Income": 3405
+        },
+        {
+            "Net Operating Revenues": 10491
+        },
+        {
+            "Africa": 1833
+        },
+        {
+            "Latin America": 1214
+        },
+        {
+            "North America": 3590
+        },
+        {
+            "Asia Pacific": 1411
+        },
+        {
+            "Global Ventures": 729
+        },
+        {
+            "Bottling Investments": 2044
+        },
+        {
+            "Corporate": 25
+        },
+        {
+            "Eliminations": -355
+        }
+    ],
+    [
+        "KO",
+        "22 Q2",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/db/734/7918/earnings_release/Coca-Cola+2022+Q2+Earnings+Release+7.26.22+FINAL.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 1905
+        },
+        {
+            "Operating Income": 2341
+        },
+        {
+            "Net Operating Revenues": 11325
+        },
+        {
+            "Africa": 2184
+        },
+        {
+            "Latin America": 1140
+        },
+        {
+            "North America": 4030
+        },
+        {
+            "Asia Pacific": 1566
+        },
+        {
+            "Global Ventures": 695
+        },
+        {
+            "Bottling Investments": 2079
+        },
+        {
+            "Corporate": 23
+        },
+        {
+            "Eliminations": -392
+        }
+    ],
+    [
+        "KO",
+        "22 Q3",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/db/734/7943/earnings_release/Coca-Cola+Q32022+Full+Earnings+Release_10.25.22_FINAL.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2825
+        },
+        {
+            "Operating Income": 3088
+        },
+        {
+            "Net Operating Revenues": 11063
+        },
+        {
+            "Africa": 1987
+        },
+        {
+            "Latin America": 1267
+        },
+        {
+            "North America": 4201
+        },
+        {
+            "Asia Pacific": 1427
+        },
+        {
+            "Global Ventures": 679
+        },
+        {
+            "Bottling Investments": 1786
+        },
+        {
+            "Corporate": 29
+        },
+        {
+            "Eliminations": -313
         }
     ],
     [
         "KO",
         "22 Q4",
-        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/db/734/8024/earnings_release/Coca-Cola+2023+Q2+Earnings+Release_Full+Release_7.26.23+FINAL.pdf",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/db/734/7960/earnings_release/Coca-Cola+fourth+quarter+and+full+year+2022+full+earnings+release-2.14.23+FINAL.pdf",
         {
-            "Net Operating Revenues": 11325
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2031
         },
         {
-            "Short-term investments": 1867
+            "Operating Income": 2075
+        },
+        {
+            "Net Operating Revenues": 10125
+        },
+        {
+            "Africa": 1519
+        },
+        {
+            "Latin America": 1289
+        },
+        {
+            "North America": 3853
+        },
+        {
+            "Asia Pacific": 1041
+        },
+        {
+            "Global Ventures": 740
+        },
+        {
+            "Bottling Investments": 1982
+        },
+        {
+            "Corporate": 17
+        },
+        {
+            "Eliminations": -316
+        }
+    ],
+    [
+        "KO",
+        "23 Q1",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/db/734/7987/earnings_release/2023+Q1+Earnings+Release+%28Ex-99.1%29_Full+Release.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 3107
+        },
+        {
+            "Operating Income": 3367
+        },
+        {
+            "Net Operating Revenues": 10980
+        },
+        {
+            "Africa": 2024
+        },
+        {
+            "Latin America": 1386
+        },
+        {
+            "North America": 3904
+        },
+        {
+            "Asia Pacific": 1371
+        },
+        {
+            "Global Ventures": 707
+        },
+        {
+            "Bottling Investments": 1946
+        },
+        {
+            "Corporate": 25
+        },
+        {
+            "Eliminations": -383
+        }
+    ],
+    [
+        "KO",
+        "23 Q2",
+        "https://d1io3yog0oux5.cloudfront.net/_c4aeacfacfa6879b9b7b146a69673f70/cocacolacompany/db/734/8024/earnings_release/Coca-Cola+2023+Q2+Earnings+Release_Full+Release_7.26.23+FINAL.pdf",
+        {
+            "Net Income Attributable to Shareowners of The Coca-Cola Company": 2547
+        },
+        {
+            "Operating Income": 2401
+        },
+        {
+            "Net Operating Revenues": 11972
+        },
+        {
+            "Africa": 2188
+        },
+        {
+            "Latin America": 1378
+        },
+        {
+            "North America": 4367
+        },
+        {
+            "Asia Pacific": 1567
+        },
+        {
+            "Global Ventures": 765
+        },
+        {
+            "Bottling Investments": 2042
+        },
+        {
+            "Corporate": 30
+        },
+        {
+            "Eliminations": -365
         }
     ]
 ]

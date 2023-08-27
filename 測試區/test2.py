@@ -4,4 +4,5 @@ key = "1Trp2jTsoUR97jOW9OerTNoUO1mcY77PAYlEX7Okj67w"
 sheet = gc.open_by_key(key)
 
 worksheet = sheet.worksheet_by_title("sheet1")
-worksheet.clear("A3")
+my_list = [10, 20, 30, 40]
+worksheet.update_row(1, my_list, col_offset=1)
